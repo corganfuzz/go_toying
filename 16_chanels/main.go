@@ -7,7 +7,7 @@ import (
 
 func runLoopSend(n int, ch chan int) {
 	for i := 0; i < n; i++ {
-		ch <- i // sending the value i to a channel
+		ch <- i // sending the value i to a channel "ch"
 	}
 	close(ch) // this is use to close a channel
 }
